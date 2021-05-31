@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', 'Arial', sans-serif;
+  background-color: rgb(252, 252, 252);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  display: grid;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page1 {
+  height: 100vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.nav-wrapper {
+  width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(0, 192, 96);
+}
+
+.navbar-1 {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-self: end;
+  opacity: 1;
+  margin-right: 2rem;
+  grid-gap: 1rem;
+  background: none;
+}
+
+.logo1 {
+  background: none;
+  justify-self: center;
+}
+.logo2 {
+  background: none;
+}
+.logo3 {
+  background: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart {
+  background: none;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log {
+  background: none;
+}
+.log div {
+  background: none;
+}
+.log2 {
+  background: none;
+  color: white;
+}
+.searchbox {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
